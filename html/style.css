@@ -1,0 +1,89 @@
+header.header-top {
+    background: #fff;
+    line-height: 95px;
+}
+
+img.logo-header {
+    width: calc(100% - 35%);
+}
+
+ul.menu-main {
+    float: left;
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+ul.menu-main li {
+    float: left;
+}
+
+ul.menu-main a {
+    float: left;
+    padding: 15px 18px;
+    font-size: 16px;
+    color: #00adef;
+}
+
+ul.menu-main li:hover {
+    background: #00adef;
+}
+
+ul.menu-main li:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    background: none !important;
+}
+
+.owl-buttons .owl-next {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+    height: 64px;
+    width: 32px;
+    line-height: 60px;
+}
+
+.owl-buttons .owl-prev {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    height: 64px;
+    width: 32px;
+    line-height: 60px;
+}
+
+.icon-arrow-right {
+    background: url(btn-next-rg.png) no-repeat;
+    height: 64px;
+    width: 32px;
+    display: block;
+}
+
+.icon-arrow-left {
+    background: url(btn-prev-rg.png) no-repeat;
+    height: 64px;
+    width: 32px;
+    display: block;
+}
+
+img.logo-footer {
+    width: calc(100% - 40%);
+}
+
+.item-bg {
+    text-align: center;
+    color: #fff;
+    background: url('baohanh.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 300px;
+    padding: 150px 0;
+}
+
+.item-bg h4 {
+    font-weight: bold;
+}
