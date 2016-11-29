@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
-	$("#owl-home").owlCarousel({
-        autoPlay: 3000,
+	  $("#owl-home").owlCarousel({
+        autoPlay: 5000,
         items : 1,
         itemsDesktop : [1199,1],
         itemsDesktopSmall : [979,1],
@@ -11,11 +11,11 @@ jQuery(document).ready(function($) {
         ]
   	});
 
-	$("#owl-customer").owlCarousel({
+	  $("#owl-customer").owlCarousel({
         autoPlay: false,
-        items : 1,
-        itemsDesktop : [1199,1],
-        itemsDesktopSmall : [979,1]
+        items : 2,
+        itemsDesktop : [1199,2],
+        itemsDesktopSmall : [979,2]
   	});
 
   	$("#owl-company").owlCarousel({
@@ -25,4 +25,18 @@ jQuery(document).ready(function($) {
         itemsDesktopSmall : [979,1]
   	});
   	
+     $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 });
