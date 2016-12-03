@@ -1,7 +1,7 @@
 header.header-top {
     background: #fff;
     line-height: 95px;
-    border-top: 8px solid #f442b0;
+    border-top: 8px solid #FFAD1B;
     border-bottom: 2px solid #42f47a;
 }
 
@@ -73,7 +73,8 @@ ul.menu-main li:hover a {
 }
 
 img.logo-footer {
-    width: calc(100% - 40%);
+    width: calc(100% - 20%);
+    border: 0;
 }
 
 .item-bg {
@@ -84,10 +85,19 @@ img.logo-footer {
     background-position: center top;
     height: 300px;
     padding: 150px 0;
+    opacity: 0.7;
+}
+
+.item-bg:hover {
+    opacity: 1;
 }
 
 .item-bg h4 {
     font-weight: bold;
+}
+
+.item-bg:hover h4 {
+    color: #f00;
 }
 
 .item-intro .item-box {
@@ -96,6 +106,7 @@ img.logo-footer {
     -webkit-box-shadow: 0 1px 2px #777;
     -moz-box-shadow: 0 2px 1px #777;
     box-shadow: 0 2px 1px #777;
+    min-height: 300px;
 }
 
 .item-intro .h3-title {
@@ -236,4 +247,69 @@ p.profile-name {
     display: none;
     text-indent: -9999px;
     background: url("totop.png");
+}
+
+.footer {
+    background-image: url(bg-footer.png);
+    background-repeat:no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    border-top: 8px solid #FFAD1B;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.copyright {
+    padding-left: 10px;
+}
+
+.h4-title {
+    color: #00ADEF;
+    text-transform: capitalize;
+}
+
+.menu-footer {
+    margin: 0;
+    padding-left: 15px;
+    list-style-type: circle;
+}
+
+/*ANIMATION CSS*/
+.item-profile img {
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 185, 53, .75);
+    box-shadow: 0px 0px 5px 5px rgba(255, 185, 53, .75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.item-profile img:hover {
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(0, 185, 233, .75);
+    box-shadow: 0px 0px 15px 10px rgba(0, 185, 233, .75);
+}
+
+.item-qa-image:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.item-qa-image {
+    overflow: hidden;
+    width: 265px;
+    height: 200px;
+}
+
+.item-qa-image img {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.menu-footer a {
+    color: #00ADEF;
+    text-decoration: none;
+}
+
+.menu-footer a:hover {
+    color: #FEB834;
 }
