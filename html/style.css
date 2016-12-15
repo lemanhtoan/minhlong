@@ -1,18 +1,17 @@
 header.header-top {
     background: #fff;
     line-height: 95px;
-    border-top: 8px solid #FFAD1B;
-    border-bottom: 2px solid #42f47a;
+    border-top: 8px solid #0c733c;
+    padding: 15px 0;
 }
 
 img.logo-header {
-    width: calc(100% - 35%);
+    width: 100%;
 }
 
 ul.menu-main {
     float: left;
     list-style: none;
-    float: right;
     margin: 0;
 }
 
@@ -22,17 +21,17 @@ ul.menu-main li {
 
 ul.menu-main a {
     float: left;
-    padding: 15px 18px;
-    color: #00adef;
+    padding: 15px 30px;
+    color: #fff;
     font-weight: bold;
 }
 
 ul.menu-main li:hover {
-    background: #00adef;
+    background: #e2edff;
 }
 
 ul.menu-main li:hover a {
-    color: #fff;
+    color: #f71420;
     text-decoration: none;
 }
 
@@ -73,7 +72,7 @@ ul.menu-main li:hover a {
 }
 
 img.logo-footer {
-    width: calc(100% - 20%);
+    width: calc(100% - 30%);
     border: 0;
 }
 
@@ -134,19 +133,20 @@ img.logo-footer {
 }
 
 .item-row {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .item-company {
-    background: #1ee4e8;
     padding: 20px 0;
+    box-shadow: 0 1px 1px 0 #C7C7C7 inset;
+    background: none repeat scroll 0 0 #9bffff;
 }
 
 .item-company .h2-title {
     text-transform: uppercase;
     font-size: 20px;
     color: #fff;
-    background: #00adef;
+    background: #1428A0;
     padding: 10px;
     text-align: center;
     margin: 0;
@@ -204,26 +204,6 @@ img.logo-footer {
     font-size: 26px;
 }
 
-.item-profile img {
-    width: 100%;
-}
-
-.item-profile {
-    padding: 10px;
-    border: 1px solid #dadada;
-    text-align: center;
-}
-
-p.profile-name {
-    font-weight: bold;
-    font-size: 16px;
-    padding-top: 10px;
-}
-
-.row-profile {
-    margin-bottom: 10px;
-}
-
 .item-qa-image img {
     width: 100%;
 }
@@ -252,21 +232,17 @@ p.profile-name {
 .footer {
     background-image: url(bg-footer.png);
     background-repeat:no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    border-top: 8px solid #FFAD1B;
     padding: 20px 0;
     margin-top: 20px;
+    background-size: 100% 100%;
 }
 
 .copyright {
-    padding-left: 10px;
+    padding-left: 35px;
 }
 
 .h4-title {
-    color: #00ADEF;
+    color: #1428A0;
     text-transform: capitalize;
 }
 
@@ -306,10 +282,39 @@ p.profile-name {
 }
 
 .menu-footer a {
-    color: #00ADEF;
+    color: #1428A0;
     text-decoration: none;
 }
 
 .menu-footer a:hover {
-    color: #FEB834;
+    color: red;
+}
+
+header.header-bottom {
+    background: #1428A0;
+}
+
+h2.caption-title {
+    font-size: 32px;
+    color: #0c733c;
+    line-height: 40px;
+}
+
+h3.hot-number {
+    float: right;
+    background: #f71420;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.hot-number i.fa.fa-phone {
+    margin-right: 10px;
+}
+
+.border-footer {
+    background: url("art.png") repeat-x;
+    background-size: 800px 100%;
+    -webkit-background-size: 800px 100%;
+    height: 10px;
 }
