@@ -28,12 +28,18 @@ if ( ! function_exists( 'minhlong_theme_setup' ) ) {
             )
         );
 
+        add_theme_support( 'custom-logo', array(
+            'class' => 'logo-header'
+        ) );
+
         $default_background = array(
             'default-color' => '#e8e8e8',
         );
         add_theme_support( 'custom-background', $default_background );
 
         register_nav_menu ( 'primary-menu', __('Primary Menu', 'minhlong') );
+
+        register_nav_menu ( 'footer-menu', __('Footer Menu', 'minhlong') );
 
         $sidebar = array(
             'name' => __('Main Sidebar', 'minhlong'),
@@ -51,26 +57,14 @@ if ( ! function_exists( 'minhlong_theme_setup' ) ) {
 /*LOGO*/
 if ( ! function_exists( 'minhlong_logo' ) ) {
     function minhlong_logo() {?>
-        <div class="logo">
-            <div class="site-name">
-                <?php if ( is_home() ) {
-                    printf(
-                        '<h1><a href="%1$s" title="%2$s">%3$s</a></h1>',
-                        get_bloginfo( 'url' ),
-                        get_bloginfo( 'description' ),
-                        get_bloginfo( 'sitename' )
-                    );
-                } else {
-                    printf(
-                        '<p><a href="%1$s" title="%2$s">%3$s</a></p>',
-                        get_bloginfo( 'url' ),
-                        get_bloginfo( 'description' ),
-                        get_bloginfo( 'sitename' )
-                    );
-                } // endif ?>
-            </div>
-            <div class="site-description"><?php bloginfo( 'description' ); ?></div>
-        </div>
+        <?php
+            printf(
+                '<h1><a href="%1$s" title="%2$s">%3$s</a></h1>',
+                get_bloginfo( 'url' ),
+                get_bloginfo( 'sitename' ),
+                the_custom_logo()
+            );
+        ?>
     <?php }
 }
 
@@ -205,12 +199,43 @@ if ( ! function_exists( 'minhlong_entry_tag' ) ) {
 
 /*SIDEBAR*/
 $sidebar = array(
-    'name' => __('Main Sidebar', 'minhlong'),
-    'id' => 'main-sidebar',
-    'description' => 'Main sidebar for minhlong theme',
+    'name' => __('Footer Sidebar', 'minhlong'),
+    'id' => 'footer-sidebar',
+    'description' => 'Footer sidebar for minhlong theme',
     'class' => 'main-sidebar',
-    'before_title' => '<h3 class="widgettitle">',
-    'after_sidebar' => '</h3>'
+    'before_title' => '<h4 class="h4-title">',
+    'after_sidebar' => '</h4>'
 );
 register_sidebar( $sidebar );
+
+$sidebarHomePage = array(
+    'name' => __('Homepage Sidebar', 'minhlong'),
+    'id' => 'home-sidebar',
+    'description' => 'Homepage sidebar for minhlong theme',
+    'class' => 'main-sidebar'
+);
+register_sidebar( $sidebarHomePage );
+
+/*STYLE AND JS*/
+function minhlong_styles() {
+    wp_register_style( 'main-style-bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', 'all' );
+    wp_register_style( 'main-style-font', get_template_directory_uri() . '/css/font-awesome.min.css', 'all' );
+    wp_register_style( 'main-style', get_template_directory_uri() . '/style.css', 'all' );
+    wp_register_style( 'main-style-owl', get_template_directory_uri() . '/owl-carousel/owl.carousel.css', 'all' );
+    wp_register_style( 'main-style-owltheme', get_template_directory_uri() . '/owl-carousel/owl.theme.css', 'all' );
+    wp_enqueue_style( 'main-style-bootstrap' );
+    wp_enqueue_style( 'main-style-font' );
+    wp_enqueue_style( 'main-style' );
+    wp_enqueue_style( 'main-style-owl' );
+    wp_enqueue_style( 'main-style-owltheme' );
+}
+add_action( 'wp_enqueue_scripts', 'minhlong_styles' );
+
+function minhlong_scripts() {
+    wp_enqueue_script(' main-jquery ', get_bloginfo('template_directory').'/jquery-3.1.1.min.js', array('jquery'));
+    wp_enqueue_script(' main-slider-owl ', get_bloginfo('template_directory').'/owl-carousel/owl.carousel.min.js', array('jquery'));
+    wp_enqueue_script(' main-script ', get_bloginfo('template_directory').'/script.js', array('jquery'));
+}
+add_action('init', 'minhlong_scripts');
+
 ?>
