@@ -24,6 +24,7 @@ ul#menu-minhlong {
     float: left;
     list-style: none;
     margin: 0;
+    padding-left: 0;
 }
 
 ul#menu-minhlong li {
@@ -349,3 +350,124 @@ footer .widget_text {
 #main-content .entry-meta {
     display: none;
 }
+
+#menu-minhlong li {
+    position: relative;
+}
+
+ul.sub-menu {
+    display: none;
+    padding-left: 0;
+}
+
+#menu-minhlong li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    z-index: 100;
+    background: #e2edff;
+    list-style: none;
+}
+
+.sub-menu li,
+.sub-menu li a {
+    width: 100%;
+}
+
+ul#menu-minhlong  .sub-menu li:hover,
+ul#menu-minhlong  .sub-menu li:hover a {
+    background: #1428A0;
+    color: #fff;
+}
+
+#menu-minhlong a,
+.footer-menu a {
+    text-transform: capitalize;
+}
+
+ul#menu-minhlong a:link,
+ul#menu-minhlong a:visited,
+ul#menu-minhlong a:hover,
+ul#menu-minhlong a:active,
+.entry-header .entry-title a:link,
+.entry-header .entry-title a:visited,
+.entry-header .entry-title a:hover,
+.entry-header .entry-title a:active {
+    text-decoration: none;
+}
+
+ul#menu-minhlong .current-menu-item,
+ul#menu-minhlong .current-menu-parent {
+    background: #e2edff;
+}
+
+ul#menu-minhlong .current-menu-item a,
+ul#menu-minhlong .current-menu-parent a {
+    color: red;
+}
+
+.entry-header .entry-title {
+    border-bottom: 2px solid #1428A0;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 9px;
+    margin-top: 0;
+}
+
+.entry-content {
+    margin-top: 20px;
+}
+
+.entry-header .entry-title a {
+    background: #1428A0;
+    color: #fff;
+    padding: 10px 30px 10px 15px;
+    font-size: 20px;
+    border-top-right-radius: 25px;
+    text-decoration: none;
+}
+
+.entry-header .entry-title a:hover {
+    color: #ffff00;
+}
+
+.frm-contact-left input[type="text"],
+.frm-contact-left input[type="email"],
+.frm-contact-left textarea {
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.frm-contact-left input[type="text"]:focus,
+.frm-contact-left input[type="email"]:focus,
+.frm-contact-left textarea:focus {
+    text-outline: none;
+    outline: none;
+}
+
+.frm-contact-left p {
+    line-height: 35px;
+}
+
+.frm-contact-left p label {
+    display: block;
+}
+
+.frm-contact-left .wpcf7-submit {
+    background: #1428A0;
+    border: none;
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.frm-contact-left div.wpcf7-response-output {
+    margin: 0;
+}
+
+.frm-contact-right {
+    margin-top: 20px;
+}
+
