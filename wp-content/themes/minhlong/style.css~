@@ -10,10 +10,13 @@
  */
 
 header.header-top {
-    background: #fff;
+    background: url(images/bgHder.jpg) #FFF bottom left repeat-x;
     line-height: 95px;
-    border-top: 8px solid #0c733c;
     padding: 15px 0;
+}
+
+h4.caption-title-h4 {
+    font-size: 16px;
 }
 
 img.custom-logo {
@@ -39,12 +42,7 @@ ul#menu-minhlong a {
 }
 
 ul#menu-minhlong li:hover {
-    background: #e2edff;
-}
-
-ul#menu-minhlong li:hover a {
-    color: #f71420;
-    text-decoration: none;
+    background: #00127d;
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -121,7 +119,7 @@ img.logo-footer {
 }
 
 .item-intro .h3-title {
-    background: #00adef;
+    background: #1428A0;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
@@ -132,7 +130,7 @@ img.logo-footer {
 }
 
 .item-intro .h3-title::after {
-    background: #00adef;
+    background: #1428A0;
     width: 50px;
     height: 25px;
     position: absolute;
@@ -151,7 +149,7 @@ img.logo-footer {
 .item-company {
     padding: 20px 0;
     box-shadow: 0 1px 1px 0 #C7C7C7 inset;
-    background: none repeat scroll 0 0 #9bffff;
+    background: none repeat scroll 0 0 #ddd;
 }
 
 .item-company .h2-title {
@@ -299,18 +297,16 @@ img.logo-footer {
     text-decoration: none;
 }
 
-.footer-menu .menu a:hover {
-    color: red;
-}
-
 header.header-bottom {
     background: #1428A0;
 }
 
 h2.caption-title {
-    font-size: 32px;
-    color: #0c733c;
+    font-size: 26px;
+    color: #1428A0;
     line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 h3.hot-number {
@@ -333,7 +329,7 @@ h3.hot-number {
 }
 
 .main-content {
-    margin: 30px 0;
+    margin: 0 0 30px 0;
 }
 
 .home .widget_text,
@@ -365,9 +361,9 @@ ul.sub-menu {
     position: absolute;
     top: 50px;
     left: 0;
-    width: 200px;
+    width: 300px;
     z-index: 100;
-    background: #e2edff;
+    background: #00127d;
     list-style: none;
 }
 
@@ -400,19 +396,14 @@ ul#menu-minhlong a:active,
 
 ul#menu-minhlong .current-menu-item,
 ul#menu-minhlong .current-menu-parent {
-    background: #e2edff;
-}
-
-ul#menu-minhlong .current-menu-item a,
-ul#menu-minhlong .current-menu-parent a {
-    color: red;
+    background: #00127d;
 }
 
 .entry-header .entry-title {
     border-bottom: 2px solid #1428A0;
     width: 100%;
     display: inline-block;
-    padding-bottom: 9px;
+    padding-bottom: 6px;
     margin-top: 0;
 }
 
@@ -424,8 +415,8 @@ ul#menu-minhlong .current-menu-parent a {
     background: #1428A0;
     color: #fff;
     padding: 10px 30px 10px 15px;
-    font-size: 20px;
-    border-top-right-radius: 25px;
+    font-size: 16px;
+    border-top-right-radius: 15px;
     text-decoration: none;
 }
 
@@ -458,7 +449,7 @@ ul#menu-minhlong .current-menu-parent a {
 .frm-contact-left .wpcf7-submit {
     background: #1428A0;
     border: none;
-    padding: 5px 15px;
+    padding: 0px 15px;
     color: #fff;
     font-weight: bold;
 }
@@ -471,5 +462,16 @@ ul#menu-minhlong .current-menu-parent a {
     margin-top: 20px;
 }
 
+#owl-home img {
+    width: 100%;
+}
 
+section.img-intro {
+    padding: 20px 0 10px 0;
+}
 
+section.img-intro img {
+    width: 100%;
+}
+
+/*RESPONSIVE*/

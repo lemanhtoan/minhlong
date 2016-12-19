@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div class="content">
-
+    <section class="img-intro">
+        <img src="<?php echo get_template_directory_uri();?>/images/intro/intro<?php echo rand(1,3); ?>.jpg" alt="Minh Long" />
+    </section>
     <section id="main-content">
         <?php if ( have_posts() ) : ?>
             <?php

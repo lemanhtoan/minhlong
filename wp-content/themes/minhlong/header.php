@@ -22,7 +22,8 @@
                 <?php minhlong_logo(); ?>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-                <h2 class="caption-title"><?php echo get_bloginfo('description');?></h2>
+                <h2 class="caption-title">Công ty TNHH MINH LONG Hà Nội</h2>
+                <h4 class="caption-title-h4"><?php echo get_bloginfo('description');?></h4>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
                 <h3 class="hot-number"><i class="fa fa-phone" aria-hidden="true"></i>0942 266 789</h3>
