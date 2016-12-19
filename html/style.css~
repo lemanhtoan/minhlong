@@ -1,14 +1,3 @@
-/*
- * Theme Name: MinhLong Theme
- * Description: Theme website MinhLong
- * Theme URI: url
- * Version: 1.0
- * Theme Author: ToanLM
- * Author URI: toanktv.it@gmail.com
- * Tags: minhlong theme, wordpress theme, toanlm
- * Textdomain: minhlong
- */
-
 header.header-top {
     background: #fff;
     line-height: 95px;
@@ -16,33 +5,32 @@ header.header-top {
     padding: 15px 0;
 }
 
-img.custom-logo {
+img.logo-header {
     width: 100%;
 }
 
-ul#menu-minhlong {
+ul.menu-main {
     float: left;
     list-style: none;
     margin: 0;
-    padding-left: 0;
 }
 
-ul#menu-minhlong li {
+ul.menu-main li {
     float: left;
 }
 
-ul#menu-minhlong a {
+ul.menu-main a {
     float: left;
     padding: 15px 30px;
     color: #fff;
     font-weight: bold;
 }
 
-ul#menu-minhlong li:hover {
+ul.menu-main li:hover {
     background: #e2edff;
 }
 
-ul#menu-minhlong li:hover a {
+ul.menu-main li:hover a {
     color: #f71420;
     text-decoration: none;
 }
@@ -70,14 +58,14 @@ ul#menu-minhlong li:hover a {
 }
 
 .icon-arrow-right {
-    background: url("images/btn-next-rg.png") no-repeat;
+    background: url(btn-next-rg.png) no-repeat;
     height: 64px;
     width: 32px;
     display: block;
 }
 
 .icon-arrow-left {
-    background: url("images/btn-prev-rg.png") no-repeat;
+    background: url(btn-prev-rg.png) no-repeat;
     height: 64px;
     width: 32px;
     display: block;
@@ -91,7 +79,7 @@ img.logo-footer {
 .item-bg {
     text-align: center;
     color: #fff;
-    background: url("images/baohanh.jpg");
+    background: url('baohanh.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     height: 300px;
@@ -181,31 +169,31 @@ img.logo-footer {
 
 
 .fancy {
-    line-height: 40px;
-    overflow: hidden;
-    text-align: center;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: center;
 }
 .fancy span {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;  
 }
 .fancy span:before,
 .fancy span:after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 1px solid #f442b0;
-    border-top: 1px solid #f442b0;
-    top: 15px;
-    width: 600px;
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid #f442b0;
+  border-top: 1px solid #f442b0;
+  top: 15px;
+  width: 600px;
 }
 .fancy span:before {
-    right: 100%;
-    margin-right: 15px;
+  right: 100%;
+  margin-right: 15px;
 }
 .fancy span:after {
-    left: 100%;
-    margin-left: 15px;
+  left: 100%;
+  margin-left: 15px;
 }
 
 .box-intro p::first-letter,
@@ -238,11 +226,11 @@ img.logo-footer {
     right: 20px;
     display: none;
     text-indent: -9999px;
-    background: url("images/totop.png");
+    background: url("totop.png");
 }
 
 .footer {
-    background-image: url("images/bg-footer.png");
+    background-image: url(bg-footer.png);
     background-repeat:no-repeat;
     padding: 20px 0;
     margin-top: 20px;
@@ -258,12 +246,11 @@ img.logo-footer {
     text-transform: capitalize;
 }
 
-.footer-menu .menu {
+.menu-footer {
     margin: 0;
     padding-left: 15px;
     list-style-type: circle;
 }
-
 
 /*ANIMATION CSS*/
 .item-profile img {
@@ -294,12 +281,12 @@ img.logo-footer {
     transition: all 0.7s ease;
 }
 
-.footer-menu .menu a {
+.menu-footer a {
     color: #1428A0;
     text-decoration: none;
 }
 
-.footer-menu .menu a:hover {
+.menu-footer a:hover {
     color: red;
 }
 
@@ -326,152 +313,8 @@ h3.hot-number {
 }
 
 .border-footer {
-    background: url("images/art.png") repeat-x;
+    background: url("art.png") repeat-x;
     background-size: 800px 100%;
     -webkit-background-size: 800px 100%;
     height: 10px;
 }
-
-.main-content {
-    margin: 30px 0;
-}
-
-.home .widget_text,
-#sidebar li,
-footer .widget_text {
-    list-style: none;
-}
-
-/*HIDDEN CONTENT*/
-
-.home h2.widgettitle,
-#main-content .entry-footer,
-#main-content .nocomments,
-#main-content .entry-meta {
-    display: none;
-}
-
-#menu-minhlong li {
-    position: relative;
-}
-
-ul.sub-menu {
-    display: none;
-    padding-left: 0;
-}
-
-#menu-minhlong li:hover .sub-menu {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 200px;
-    z-index: 100;
-    background: #e2edff;
-    list-style: none;
-}
-
-.sub-menu li,
-.sub-menu li a {
-    width: 100%;
-}
-
-ul#menu-minhlong  .sub-menu li:hover,
-ul#menu-minhlong  .sub-menu li:hover a {
-    background: #1428A0;
-    color: #fff;
-}
-
-#menu-minhlong a,
-.footer-menu a {
-    text-transform: capitalize;
-}
-
-ul#menu-minhlong a:link,
-ul#menu-minhlong a:visited,
-ul#menu-minhlong a:hover,
-ul#menu-minhlong a:active,
-.entry-header .entry-title a:link,
-.entry-header .entry-title a:visited,
-.entry-header .entry-title a:hover,
-.entry-header .entry-title a:active {
-    text-decoration: none;
-}
-
-ul#menu-minhlong .current-menu-item,
-ul#menu-minhlong .current-menu-parent {
-    background: #e2edff;
-}
-
-ul#menu-minhlong .current-menu-item a,
-ul#menu-minhlong .current-menu-parent a {
-    color: red;
-}
-
-.entry-header .entry-title {
-    border-bottom: 2px solid #1428A0;
-    width: 100%;
-    display: inline-block;
-    padding-bottom: 9px;
-    margin-top: 0;
-}
-
-.entry-content {
-    margin-top: 20px;
-}
-
-.entry-header .entry-title a {
-    background: #1428A0;
-    color: #fff;
-    padding: 10px 30px 10px 15px;
-    font-size: 20px;
-    border-top-right-radius: 25px;
-    text-decoration: none;
-}
-
-.entry-header .entry-title a:hover {
-    color: #ffff00;
-}
-
-.frm-contact-left input[type="text"],
-.frm-contact-left input[type="email"],
-.frm-contact-left textarea {
-    width: 100%;
-    padding: 0px 5px;
-}
-
-.frm-contact-left input[type="text"]:focus,
-.frm-contact-left input[type="email"]:focus,
-.frm-contact-left textarea:focus {
-    text-outline: none;
-    outline: none;
-}
-
-.frm-contact-left p {
-    line-height: 35px;
-}
-
-.frm-contact-left p label {
-    display: block;
-}
-
-.frm-contact-left .wpcf7-submit {
-    background: #1428A0;
-    border: none;
-    padding: 5px 15px;
-    color: #fff;
-    font-weight: bold;
-}
-
-.frm-contact-left div.wpcf7-response-output {
-    margin: 0;
-}
-
-.frm-contact-right {
-    margin-top: 20px;
-}
-
-#owl-home img {
-	width: 100%;
-}
-
