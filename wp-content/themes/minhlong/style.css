@@ -250,6 +250,7 @@ img.logo-footer {
 
 .copyright {
     padding-left: 35px;
+    margin-top: 10px;
 }
 
 .h4-title {
@@ -476,3 +477,24 @@ section.img-intro img {
 }
 
 /*RESPONSIVE*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h2.caption-title {
+        font-size: 22px;
+    }
+
+    h4.caption-title-h4 {
+        font-size: 14px;
+    }
+
+    h3.hot-number {
+        float: left;
+    }
+
+    ul#menu-minhlong a {
+        padding: 15px;
+    }
+
+    .copyright {
+        padding-left: 0;
+    }
+}

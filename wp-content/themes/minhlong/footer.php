@@ -7,18 +7,18 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-xs-12 col-sm-4 col-md-4">
                 <a href="<?php echo get_bloginfo( 'url' ); ?>"><img class="logo-footer" src="<?php echo get_template_directory_uri();?>/images/logo.png"/></a>
                 <p class="copyright"> ©copyright <?php echo date('Y'); ?> <a href="<?php echo get_bloginfo( 'url' ); ?>"><b class="red"> <?php bloginfo( 'sitename' ); ?></b></a></p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-5">
+            <div class="col-xs-12 col-sm-4 col-md-5">
                 <?php
                 if(is_active_sidebar('footer-sidebar')){
                     dynamic_sidebar('footer-sidebar');
                 }
                 ?>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-4 col-md-3">
                 <h4 class="h4-title">Danh Mục</h4>
                 <?php minhlong_menu( 'footer-menu' ); ?>
             </div>
