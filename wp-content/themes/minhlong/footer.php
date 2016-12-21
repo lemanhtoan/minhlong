@@ -26,11 +26,7 @@
     </div>
 </footer>
 <!-- footer -->
-<?php 
-$colorBgMenu = get_option('colorBgMenu');
-$demoFile = get_option('demo-file'); 
-var_dump($colorBgMenu, $demoFile);
-?>
+
 <a href="#" class="scrollup">Scroll</a>
 <?php wp_footer(); ?>
 </body>

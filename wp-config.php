@@ -26,7 +26,7 @@ define('DB_NAME', 'minhlong');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '11111');
+define('DB_PASSWORD', '123456a@');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

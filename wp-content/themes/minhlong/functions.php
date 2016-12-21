@@ -256,18 +256,11 @@ function theme_settings_page()
     <?php
 }
 
-function setting_bgmenu_element()
-{
-    ?>
-        <input type="color" name="colorBgMenu" id="colorBgMenu" value="<?php echo get_option('colorBgMenu'); ?>" />
-    <?php
-}
-
 function handle_file_upload($option)
 {
-  if(!empty($_FILES["demo-file"]["tmp_name"]))
+  if(!empty($_FILES["logoFile"]["tmp_name"]))
   {
-    $urls = wp_handle_upload($_FILES["demo-file"], array('test_form' => FALSE));
+    $urls = wp_handle_upload($_FILES["logoFile"], array('test_form' => FALSE));
     $temp = $urls["url"];
     return $temp;   
   }
@@ -278,22 +271,54 @@ function handle_file_upload($option)
 function demo_file_display()
 {
    ?>
-        <input type="file" name="demo-file" /> 
-        <?php echo get_option('demo-file'); ?>
+        <input type="file" name="logoFile" /> 
+        <?php echo get_option('logoFile'); ?>
    <?php
 }
+
+function setting_bgmenu_element()
+{
+    ?>
+    <input type="color" name="colorBgMenu" id="colorBgMenu" value="<?php echo get_option('colorBgMenu'); ?>" />
+    <?php
+}
+function setting_bgmenuactive_element()
+{
+    ?>
+    <input type="color" name="acviteBgMenu" id="acviteBgMenu" value="<?php echo get_option('acviteBgMenu'); ?>" />
+    <?php
+}
+function setting_color_element()
+{
+    ?>
+    <input type="color" name="colorElement" id="colorElement" value="<?php echo get_option('colorElement'); ?>" />
+    <?php
+}
+function setting_color_bold_element()
+{
+    ?>
+    <input type="color" name="colorElementBold" id="colorElementBold" value="<?php echo get_option('colorElementBold'); ?>" />
+    <?php
+}
+
 
 function display_theme_panel_fields()
 {
     add_settings_section("section", "All Settings", null, "theme-options");
-    
-    add_settings_field("colorBgMenu", "Color background menu setting", "setting_bgmenu_element", "theme-options", "section");
-    add_settings_field("demo-file", "Logo Footer", "demo_file_display", "theme-options", "section");  
 
-    register_setting("section", "demo-file", "handle_file_upload");
+    add_settings_field("colorBgMenu", "Background menu", "setting_bgmenu_element", "theme-options", "section");
+    add_settings_field("acviteBgMenu", "Menu active", "setting_bgmenuactive_element", "theme-options", "section");
+    add_settings_field("colorElement", "Color main", "setting_color_element", "theme-options", "section");
+    add_settings_field("colorElementBold", "Color bold main", "setting_color_bold_element", "theme-options", "section");
+
     register_setting("section", "colorBgMenu");
-}
+    register_setting("section", "acviteBgMenu");
+    register_setting("section", "colorElement");
+    register_setting("section", "colorElementBold");
 
+    add_settings_field("logoFile", "Logo Footer", "demo_file_display", "theme-options", "section");
+    register_setting("section", "logoFile", "handle_file_upload");
+}
 
 add_action("admin_init", "display_theme_panel_fields");
 
@@ -301,7 +326,6 @@ function add_theme_menu_item()
 {
     add_menu_page("Các cài đặt khác", "Cài đặt khác", "manage_options", "theme-panel", "theme_settings_page", null, 99);
 }
-
 add_action("admin_menu", "add_theme_menu_item");
 
 ?>

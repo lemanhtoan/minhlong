@@ -38,12 +38,7 @@ ul#menu-minhlong li {
 ul#menu-minhlong a {
     float: left;
     padding: 15px 30px;
-    color: #fff;
     font-weight: bold;
-}
-
-ul#menu-minhlong li:hover {
-    background: #00127d;
 }
 
 .owl-theme .owl-controls .owl-buttons div {
@@ -89,7 +84,6 @@ img.logo-footer {
 
 .item-bg {
     text-align: center;
-    color: #fff;
     background: url("images/baohanh.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -106,10 +100,6 @@ img.logo-footer {
     font-weight: bold;
 }
 
-.item-bg:hover h4 {
-    color: #f00;
-}
-
 .item-intro .item-box {
     -moz-box-shadow: 0 3px 2px #777;
     padding: 5px 10px;
@@ -120,8 +110,6 @@ img.logo-footer {
 }
 
 .item-intro .h3-title {
-    background: #1428A0;
-    color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
@@ -131,7 +119,6 @@ img.logo-footer {
 }
 
 .item-intro .h3-title::after {
-    background: #1428A0;
     width: 50px;
     height: 25px;
     position: absolute;
@@ -156,8 +143,6 @@ img.logo-footer {
 .item-company .h2-title {
     text-transform: uppercase;
     font-size: 20px;
-    color: #fff;
-    background: #1428A0;
     padding: 10px;
     text-align: center;
     margin: 0;
@@ -174,10 +159,8 @@ img.logo-footer {
 }
 
 .red {
-    color: red;
     font-weight: bold;
 }
-
 
 .fancy {
     line-height: 40px;
@@ -210,7 +193,6 @@ img.logo-footer {
 .box-intro p::first-letter,
 #owl-customer p::first-letter,
 .item-qa p::first-letter {
-    color: red;
     text-transform: uppercase;
     font-size: 26px;
 }
@@ -254,7 +236,6 @@ img.logo-footer {
 }
 
 .h4-title {
-    color: #1428A0;
     text-transform: capitalize;
 }
 
@@ -295,17 +276,11 @@ img.logo-footer {
 }
 
 .footer-menu .menu a {
-    color: #1428A0;
     text-decoration: none;
-}
-
-header.header-bottom {
-    background: #1428A0;
 }
 
 h2.caption-title {
     font-size: 26px;
-    color: #1428A0;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -313,8 +288,6 @@ h2.caption-title {
 
 h3.hot-number {
     float: right;
-    background: #f71420;
-    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -365,19 +338,12 @@ ul.sub-menu {
     left: 0;
     width: 300px;
     z-index: 100;
-    background: #00127d;
     list-style: none;
 }
 
 .sub-menu li,
 .sub-menu li a {
     width: 100%;
-}
-
-ul#menu-minhlong  .sub-menu li:hover,
-ul#menu-minhlong  .sub-menu li:hover a {
-    background: #1428A0;
-    color: #fff;
 }
 
 #menu-minhlong a,
@@ -396,11 +362,6 @@ ul#menu-minhlong a:active,
     text-decoration: none;
 }
 
-ul#menu-minhlong .current-menu-item,
-ul#menu-minhlong .current-menu-parent {
-    background: #00127d;
-}
-
 .entry-header .entry-title {
     border-bottom: 2px solid #1428A0;
     width: 100%;
@@ -414,23 +375,17 @@ ul#menu-minhlong .current-menu-parent {
 }
 
 .entry-header .entry-title a {
-    background: #1428A0;
-    color: #fff;
     padding: 10px 30px 10px 15px;
     font-size: 16px;
     border-top-right-radius: 15px;
     text-decoration: none;
 }
 
-.entry-header .entry-title a:hover {
-    color: #ffff00;
-}
-
 .frm-contact-left input[type="text"],
 .frm-contact-left input[type="email"],
 .frm-contact-left textarea {
     width: 100%;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 .frm-contact-left input[type="text"]:focus,
@@ -449,10 +404,8 @@ ul#menu-minhlong .current-menu-parent {
 }
 
 .frm-contact-left .wpcf7-submit {
-    background: #1428A0;
     border: none;
     padding: 0px 15px;
-    color: #fff;
     font-weight: bold;
 }
 
@@ -474,6 +427,10 @@ section.img-intro {
 
 section.img-intro img {
     width: 100%;
+}
+
+#owl-customer .owl-item {
+    padding: 10px;
 }
 
 /*RESPONSIVE*/

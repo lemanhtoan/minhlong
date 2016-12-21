@@ -11,6 +11,67 @@
     <link rel="profile" href="http://gmgp.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php wp_head();  ?>
+    <?php
+        $colorBgMenu = get_option('colorBgMenu');
+        $acviteBgMenu = get_option('acviteBgMenu');
+        $colorElement = get_option('colorElement');
+        $colorElementBold = get_option('colorElementBold');
+        $demoFile = get_option('logoFile');
+    ?>
+    <style>
+        /* #1428A0  #00127d    #fff   #f71420 */
+        ul#menu-minhlong a,
+        .item-bg,
+        .item-intro .h3-title,
+        .item-company .h2-title,
+        h3.hot-number,
+        ul#menu-minhlong  .sub-menu li:hover,
+        ul#menu-minhlong  .sub-menu li:hover a,
+        .entry-header .entry-title a,
+        .frm-contact-left .wpcf7-submit,
+        .h3-title {
+            color: <?php echo $colorElement;?>
+        }
+
+        header.header-bottom,
+        ul#menu-minhlong  .sub-menu li:hover,
+        ul#menu-minhlong  .sub-menu li:hover a,
+        .entry-header .entry-title a,
+        .frm-contact-left .wpcf7-submit,
+        .item-intro .h3-title::after,
+        .item-company .h2-title,
+        .h3-title {
+            background: <?php echo $colorBgMenu;?>
+        }
+
+        h2.caption-title,
+        .item-intro,
+        .h4-title,
+        .footer-menu .menu a
+        {
+            color: <?php echo $colorBgMenu;?>
+        }
+
+        .red,
+        .item-bg:hover h4,
+        .box-intro p::first-letter,
+        #owl-customer p::first-letter,
+        .item-qa p::first-letter,
+        .entry-header .entry-title a:hover {
+            color: <?php echo $colorElementBold;?>
+        }
+
+        h3.hot-number {
+            background: <?php echo $colorElementBold;?>
+        }
+
+        #menu-minhlong li:hover .sub-menu,
+        ul#menu-minhlong .current-menu-item,
+        ul#menu-minhlong .current-menu-parent,
+        ul#menu-minhlong li:hover {
+            background: <?php echo $acviteBgMenu;?>
+        }
+    </style>
 </head>
 <body <?php body_class(); ?> >
 
