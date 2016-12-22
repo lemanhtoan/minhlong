@@ -95,6 +95,7 @@
 <header class="header-bottom">
     <div class="container">
         <div class="row">
+            <span class="nav-mobile">Menu</span>
             <?php minhlong_menu( 'primary-menu' ); ?>
         </div>
     </div>

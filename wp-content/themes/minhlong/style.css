@@ -171,8 +171,8 @@ img.logo-footer {
     display: inline-block;
     position: relative;
 }
-.fancy span:before,
-.fancy span:after {
+.fancy span::before,
+.fancy span::after {
     content: "";
     position: absolute;
     height: 5px;
@@ -181,11 +181,11 @@ img.logo-footer {
     top: 15px;
     width: 600px;
 }
-.fancy span:before {
+.fancy span::before {
     right: 100%;
     margin-right: 15px;
 }
-.fancy span:after {
+.fancy span::after {
     left: 100%;
     margin-left: 15px;
 }
@@ -391,7 +391,6 @@ ul#menu-minhlong a:active,
 .frm-contact-left input[type="text"]:focus,
 .frm-contact-left input[type="email"]:focus,
 .frm-contact-left textarea:focus {
-    text-outline: none;
     outline: none;
 }
 
@@ -433,6 +432,10 @@ section.img-intro img {
     padding: 10px;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 /*RESPONSIVE*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     h2.caption-title {
@@ -453,5 +456,115 @@ section.img-intro img {
 
     .copyright {
         padding-left: 0;
+    }
+
+    .item-intro {
+        margin-top: 30px;
+    }
+
+    .item-company .h2-title {
+        margin-top: 40%;
+    }
+
+    .item-company img {
+        padding: 5px;
+    }
+
+    .item-qa-image {
+        width: 170px;
+    }
+
+    #menu-minhlong li:hover .sub-menu {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    img.custom-logo {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h2.caption-title, 
+    h4.caption-title-h4 {
+        font-size: 17px;
+        text-align: center;
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    h3.hot-number {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    #menu-minhlong {
+        display: none;
+    }
+
+    #menu-minhlong li,
+    ul#menu-minhlong a {
+        width: 100%;
+        float: left;
+    }
+
+    #menu-minhlong li:hover .sub-menu {
+        display: none;
+    }
+
+    #owl-home img {
+        height: 200px;
+    }
+
+    .owl-buttons .owl-next {
+        top: 20%;
+    }
+
+    .item-intro {
+        margin-top: 30px;
+    }
+
+    .col-not-padd {
+        padding-left: 15px !important;
+    }
+
+    .item-company img {
+        padding: 5px 0;
+    }
+
+    .h2-title {
+        font-size: 24px;
+    }
+
+    .caption-title-h4 {
+        line-height: 30px;
+    }
+
+    .item-qa-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #owl-company img,
+    img.logo-footer {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .copyright {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .footer .widget.widget_text,
+    .h4-title,
+    .footer-menu {
+        text-align: center;
     }
 }
