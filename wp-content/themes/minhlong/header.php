@@ -29,7 +29,8 @@
         ul#menu-minhlong  .sub-menu li:hover a,
         .entry-header .entry-title a,
         .frm-contact-left .wpcf7-submit,
-        .h3-title {
+        .h3-title,
+        .nav-mobile {
             color: <?php echo $colorElement;?>
         }
 
@@ -56,8 +57,7 @@
         .item-bg:hover h4,
         .box-intro p::first-letter,
         #owl-customer p::first-letter,
-        .item-qa p::first-letter,
-        .entry-header .entry-title a:hover {
+        .item-qa p::first-letter {
             color: <?php echo $colorElementBold;?>
         }
 
@@ -70,6 +70,17 @@
         ul#menu-minhlong .current-menu-parent,
         ul#menu-minhlong li:hover {
             background: <?php echo $acviteBgMenu;?>
+        }
+
+        @media screen and (max-width: 767px) {
+            .current-menu-parent {
+                background: <?php echo $colorBgMenu;?> !important;
+            }
+
+            .sub-menu {
+                background: <?php echo $colorBgMenu;?>;
+            }
+
         }
     </style>
 </head>
@@ -95,7 +106,7 @@
 <header class="header-bottom">
     <div class="container">
         <div class="row">
-            <span class="nav-mobile">Menu</span>
+            <span class="nav-mobile">Danh Mục</span>
             <?php minhlong_menu( 'primary-menu' ); ?>
         </div>
     </div>

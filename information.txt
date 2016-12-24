@@ -1,5 +1,6 @@
 admin/123456
 clone: http://viethoa.com.vn/
 install new plugin: sudo chown -R www-data:www-data *
-https://www.zopim.com chat plugin / adcskt@gmail.com/ 123456a@
+support chat online facebook: https://www.facebook.com/baohanhminhlong
+change colorElementBold => #00127d
 

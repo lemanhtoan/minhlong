@@ -43,10 +43,4 @@ jQuery(document).ready(function($) {
     $('.nav-mobile').click(function() {
          $('#menu-minhlong').toggle("slide");
     });
-
-    $('#menu-minhlong li').hasClass('menu-item-has-children').click(function(e) {
-        e.preventDefault();
-        return false;
-         $('.sub-menu').toggle("slide");
-    });
 });
