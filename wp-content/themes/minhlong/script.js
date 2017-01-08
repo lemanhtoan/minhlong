@@ -13,9 +13,7 @@ jQuery(document).ready(function($) {
 
 	  $("#owl-customer").owlCarousel({
         autoPlay: false,
-        items : 2,
-        itemsDesktop : [1199,2],
-        itemsDesktopSmall : [979,2]
+        items : 1
   	});
 
   	$("#owl-company").owlCarousel({
